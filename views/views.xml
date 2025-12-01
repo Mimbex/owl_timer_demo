@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+    <record id="action_owl_timer" model="ir.actions.client">
+        <field name="name">OWL Timer</field>
+        <field name="tag">owl_timer_demo.timer_app</field>
+    </record>
+
+    <menuitem id="menu_owl_timer_root"
+              name="OWL Timer"
+              sequence="10"/>
+
+    <menuitem id="menu_owl_timer_app"
+              name="Timer App"
+              parent="menu_owl_timer_root"
+              action="action_owl_timer"
+              sequence="1"/>
+  </data>
+</odoo>
